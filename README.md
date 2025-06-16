@@ -31,7 +31,3 @@
 
 - Downloaded and installed Terraform (v1.8+)
 - Verified installation with `terraform -v`
-- Ready for Day 2: writing `.tf` files
-
-📸 Screenshot:  
-![Terraform Installed](./screenshots/terraform-install-success.png)
