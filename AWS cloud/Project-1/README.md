@@ -33,8 +33,8 @@ This project demonstrates how to deploy a basic web server on an AWS EC2 instanc
 8. Installed HTTPD server:
    ```bash
    sudo -i
-   sudo yum update -y
-   sudo yum install -y httpd
+   yum update -y
+   yum install -y httpd
    cd /var/www/html
    vi index.html  -> gave sample code
    sudo systemctl start httpd
