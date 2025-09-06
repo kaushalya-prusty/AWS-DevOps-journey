@@ -68,6 +68,24 @@ The applications are accessed securely via an **Application Load Balancer (ALB)*
    - ALB → HTTP (80) from Anywhere.
 5. SSH into Bastion → then connected to private EC2 instances.
 6. Installed Apache (`httpd`) & deployed **sample service pages**.
+   -Installed & started Apache HTTP server:
+
+   ```bash
+   vi papana.pem    --> copy paste the private key
+   chmod 400 "papana.pem"
+   ssh -i "papana.pem" ec2-user@10.0.1.202
+
+   # connected to the private servers
+
+   sudo -i
+   yum update -y
+   yum install -y httpd
+   cd /var/www/html
+   vi index.html  -> gave sample code "This is home page."
+   sudo systemctl start httpd
+   sudo systemctl enable httpd
+   ```
+
 7. Created **Target Groups** & registered private EC2s.
 8. Configured **Application Load Balancer**:
    - Forwarded requests `/`, `/mobile`, `/electronics`.
@@ -102,3 +120,5 @@ The applications are accessed securely via an **Application Load Balancer (ALB)*
 - Deploying **multiple apps (microservices)** behind ALB.
 - Configuring **path-based routing** in ALB.
 - Importance of correct **Security Group rules** for controlled access.
+
+NLB-d0a94ea25246bc62.elb.us-east-1.amazonaws.com

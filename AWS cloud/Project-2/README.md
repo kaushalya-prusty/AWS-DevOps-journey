@@ -34,11 +34,14 @@ Set up a **secure 2-tier architecture** on AWS:
 3. Launched **Web Server** in Private Subnet (no public IP).
 4. Configured **NAT Gateway** in public subnet for internet access.
 5. Installed & started Apache HTTP server:
+
    ```bash
    vi papana.pem    --> copy paste the private key
    chmod 400 "papana.pem"
    ssh -i "papana.pem" ec2-user@10.0.1.202
+
    # connected to the private server
+
    sudo -i
    yum update -y
    yum install -y httpd
@@ -47,6 +50,7 @@ Set up a **secure 2-tier architecture** on AWS:
    sudo systemctl start httpd
    sudo systemctl enable httpd
    ```
+
 6. Verified access from Bastion: curl http://10.0.1.202
 
 ✅ Outcome
