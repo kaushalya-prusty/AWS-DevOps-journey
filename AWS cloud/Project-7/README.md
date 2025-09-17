@@ -38,8 +38,7 @@ The setup ensures high availability, durability, and a cost-effective solution t
 
 ## 📸 Output
 
-![alt text](Output.png)
-![Calculator App Hosted on S3]
+![Calculator App Hosted on S3](Output.png)
 
 ---
 
