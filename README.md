@@ -13,3 +13,7 @@
 # Project-6: VPC Peering (Inter-Region – Ohio ↔ California)
 
 # Project-7: Serverless Website Hosting on AWS S3
+
+# Project-8: IAM Best Practices with Secrets Manager Integration
+
+# Project-9 Monitoring EC2 with Prometheus & Grafana on AWS
