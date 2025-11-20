@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('git clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/abhi1563/jenkins.git'
+                git branch: 'main', url: 'https://github.com/kaushalya-prusty/AWS-DevOps-journey.git'
             }
         }
         
